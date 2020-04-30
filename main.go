@@ -49,7 +49,10 @@ func main() {
 		goto ERR
 	}
 
+	fmt.Printf("已经分析出需要的class或id，保存在%s里", originFile)
+
 ERR:
+	fmt.Println(err.Error())
 }
 
 // 初始化命令行参数
