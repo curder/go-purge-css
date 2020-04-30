@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"regexp"
+	"sort"
 	"strings"
 )
 
@@ -37,6 +38,11 @@ func main() {
 
 	// 去重
 	result = removeRepByMap(result)
+
+	// 输出排序
+	sort.Slice(result, func(i, j int) bool {
+		return result[i] < result[j]
+	})
 
 	// 写入到目标文件
 	if err = writeFile(distFile, result); err != nil {
@@ -90,6 +96,9 @@ func writeFile(fileName string, content []string) (err error) {
 	defer newFile.Close()
 
 	for _, str = range content {
+		if str == "" { // 去除空格
+			continue
+		}
 		if _, err = newFile.WriteString(str + "\n"); err != nil {
 			return
 		}
