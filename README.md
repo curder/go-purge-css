@@ -10,6 +10,16 @@
 
 > 可以在这里验证正则匹配情况[regexr](https://regexr.com/)
 
+## 安装
+
+下载仓库中的二进制文件`go-prune-css`，添加到当前电脑的`$PATH`目录。
+
+```
+cp go-prune-css /usr/local/bin/.
+```
+
+重新启动一个命令行终端执行`go-prune-css`命令。
+
 ## 执行
 
 ```
