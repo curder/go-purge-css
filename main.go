@@ -50,6 +50,7 @@ func main() {
 	}
 
 	fmt.Printf("已经分析出需要的class或id，保存在%s里", originFile)
+	return
 
 ERR:
 	fmt.Println(err.Error())
