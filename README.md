@@ -26,4 +26,4 @@ cp go-prune-css /usr/local/bin/.
 go-prune-css -origin "code.html" -dist "./dist.txt"
 ```
 > `-origin` 要修改的文件
-- `-dist` 需要写入的文件
+> `-dist` 需要写入的文件
