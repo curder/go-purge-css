@@ -12,6 +12,7 @@ import (
 
 var (
 	originFile string // 源文件
+	parseLine  int    // 分析出的行
 	distFile   string // 目标文件
 )
 
@@ -49,7 +50,7 @@ func main() {
 		goto ERR
 	}
 
-	fmt.Printf("已经分析出需要的class或id，保存在%s里", distFile)
+	fmt.Printf("已经分析出需要的class或id，总共%d个，保存在%s里", parseLine, distFile)
 	return
 
 ERR:
@@ -106,6 +107,7 @@ func writeFile(fileName string, content []string) (err error) {
 		if _, err = newFile.WriteString(str + "\n"); err != nil {
 			return
 		}
+		parseLine++
 	}
 
 	return
