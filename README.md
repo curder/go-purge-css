@@ -12,13 +12,15 @@
 
 ## 安装
 
-下载仓库中的二进制文件`go-prune-css`，添加到当前电脑的`$PATH`目录。
+下载仓库中的二进制文件`go-purge-css`，添加到当前电脑的`$PATH`目录。
 
 ```
-cp go-prune-css /usr/local/bin/.
+cp go-purge-css /usr/local/bin/.
 ```
 
-重新启动一个命令行终端执行`go-prune-css`命令。
+> 授权执行权限 `chmod +x /usr/local/bin/go-purge-css`
+
+重新启动一个命令行终端执行`go-purge-css`命令。
 
 ## 执行
 
