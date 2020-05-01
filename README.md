@@ -25,7 +25,7 @@ cp go-purge-css /usr/local/bin/.
 ## 执行
 
 ```
-go-prune-css -origin "code.html" -dist "./dist.txt"
+go-purge-css -origin "code.html" -dist "./dist.txt"
 ```
 > `-origin` 要修改的文件
 > `-dist` 需要写入的文件
