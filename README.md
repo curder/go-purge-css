@@ -1,3 +1,5 @@
+**当前项目已经归档，[更多查看](https://github.com/ava-cn/purge-css)**
+
 # GoLang处理页面CSS
 
 使用正则表达式分析页面css和id，提取到单独的文件。
